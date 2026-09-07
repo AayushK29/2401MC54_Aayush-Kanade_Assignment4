@@ -1,0 +1,1 @@
+We allow multiple readers to access the shared data at the same time, but a writer gets exclusive access. In a readers-priority solution, readers can keep entering before waiting writers, which may cause writer starvation. Our fair solution uses a `serviceQueue` so readers and writers get a fair chance, preventing continuous reader entry.

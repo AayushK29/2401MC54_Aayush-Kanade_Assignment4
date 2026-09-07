@@ -1,0 +1,1 @@
+We used shared memory in xv6 so the producer and consumer could access the same buffer. The `shm_get()` system call creates the shared page, and `fork()` maps the same page for the child. Semaphores (`empty`, `full`, and `mutex`) then coordinate access and prevent data conflicts.
